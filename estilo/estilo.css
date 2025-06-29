@@ -7,8 +7,8 @@
     --cor1: #DECDFA;
     --cor2: #FAE8F9;
     --cor3: #F5E8FA;
-    --cor4: #F5C8C4;
-    --cor5: #FAE8EE;
+    --cor4: #F5F5DC;
+    --cor5: #FAF0E6;
 }
 
 * {
@@ -44,21 +44,35 @@ nav {
     font-family: "Cagliostro", sans-serif;
 }
 
-nav > span > p {
+nav > section {
+    color: white;
+    padding: 10px;
+}
+
+nav > section > p {
     display: none;
 }
 
-nav > span:hover {
-    background-color: rgba(255, 255, 255, 0.644);
+nav > section:hover > span {
+    display: none;
 }
 
-nav > span:hover > p {
-   display: block;
-   text-align: left; 
+nav > section:hover > #whatsapp {
+    color: white;
+    display: block;
+    text-align: left;
+    background-image: linear-gradient(to right, green, lightgreen);
+}
+
+nav > section:hover > #instagram {
+    color: white;
+    display: block;
+    text-align: left;
+    background-image: linear-gradient(45deg, #833AB4, #C13584, #E1306C, #FD1D1D, #FCAF45);
 }
 
 main {
-    background-image: linear-gradient(to left, var(--cor4), #ddc8c5, var(--cor5));
+    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
     margin: auto;
     min-width: 300px;
     max-width: 800px;
@@ -118,4 +132,19 @@ p{
 h3, h4 {
     padding: 10px;
     margin: 5px;
+}
+
+footer {
+    background-color: var(--cor0);
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
