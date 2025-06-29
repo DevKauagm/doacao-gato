@@ -58,8 +58,9 @@ nav > span:hover > p {
 }
 
 main {
-    background-image: linear-gradient(to bottom, var(--cor4), #d8bcb9, var(--cor5));
+    background-image: linear-gradient(to left, var(--cor4), #ddc8c5, var(--cor5));
     margin: auto;
+    min-width: 300px;
     max-width: 800px;
     padding: 10px;
 }
