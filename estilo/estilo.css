@@ -1,6 +1,16 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Cagliostro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
+
+ @font-face {
+    font-family: 'pata';
+    src: url('../fontes/Cat\ paw.ttf') format('truetype');
+ }
+
+ @font-face {
+    font-family: 'monosquare';
+    src: url('../fontes/Big\ Pixel\ demo.otf') format('opentype');
+ }
 
 :root {
     --cor0: #fd91f8;
@@ -17,19 +27,22 @@
 }
 
 body {
-    background: var(--cor3) url('../imagens/patinha-rosa.png') left top / 55px repeat scroll;
+    background: var(--cor3) url('../imagens/patinha-rosa.png') left top / 202px repeat scroll;
     height: 100vh;
 }
 
 header {
     background-image: linear-gradient(to top, var(--cor1), var(--cor2), var(--cor3));
     height: 200px;
-    font-family: "Cagliostro", sans-serif;
 }
 
 header > h1 {
+    color: var(--cor0);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
     text-align: center;
     padding: 10px;
+    font-family: 'pata';
+    font-size: 50px;
 }
 
 header > p {
@@ -38,37 +51,40 @@ header > p {
 }
 
 nav {
-    padding: 10px;
+    color: white;
     background-image: linear-gradient(to right, var(--cor0), var(--cor1));
     text-align: center;
     font-family: "Cagliostro", sans-serif;
+    padding-bottom: 20px;
+    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.527);
 }
 
-nav > section {
-    color: white;
+nav > p {
     padding: 10px;
 }
 
+nav > section {
+    max-width: 500px;
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+}
+
 nav > section > p {
-    display: none;
+    padding-bottom: 20px;
 }
 
-nav > section:hover > span {
-    display: none;
-}
-
-nav > section:hover > #whatsapp {
+nav a{
     color: white;
-    display: block;
-    text-align: left;
-    background-image: linear-gradient(to right, green, lightgreen);
 }
 
-nav > section:hover > #instagram {
-    color: white;
-    display: block;
-    text-align: left;
-    background-image: linear-gradient(45deg, #833AB4, #C13584, #E1306C, #FD1D1D, #FCAF45);
+#whatsapp {
+  background-color: #25D366;
+}
+
+#instagram {
+  background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
 }
 
 main {
@@ -79,17 +95,21 @@ main {
     padding: 10px;
 }
 
-h1 {
-    font-family: "Cagliostro", sans-serif;
+main h1 {
+    color: rgb(155, 118, 24);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
+    font-family: "monosquare", sans-serif;
+    font-size: 30px;
     text-align: center;
     padding: 10px;
+    margin-top: 50px;
 }
 
 h2 {
     padding: 50px;
-    margin: 50px -10px;
+    margin: 50px 0px;
     text-align: center;
-    font-family: "Cagliostro", sans-serif;
+    font-family: "Autour One", sans-serif;
 }
 
 h2::after {
@@ -101,12 +121,18 @@ img {
     margin: auto;
 }
 
+nav img {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
 article {
     background-color: white;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
     margin-top: 50px;
     padding: 20px;
     text-align: justify;
-    border: 5px dashed var(--cor1);
 }
 
 ul {
@@ -124,7 +150,7 @@ li {
     margin-left: 10px;
 }
 
-p{
+main p{
     padding: 10px;
     font-family: "Cagliostro", sans-serif;
 }
