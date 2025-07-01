@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Autour+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
  @font-face {
     font-family: 'pata';
     src: url('../fontes/Cat\ paw.ttf') format('truetype');
@@ -40,23 +42,26 @@ header > h1 {
     color: var(--cor0);
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
     text-align: center;
-    padding: 10px;
-    font-family: 'pata';
-    font-size: 50px;
+    padding-top: 20px;
+    font-family: 'pata', monospace;
+    font-size: 50px
 }
 
 header > p {
+    color: #9b7618;
     text-align: center;
     margin-top: 50px;
+    font-family: "Autour One", cursive;
+    font-size: clamp(15px, 2vw, 25px);
 }
 
 nav {
     color: white;
     background-image: linear-gradient(to right, var(--cor0), var(--cor1));
     text-align: center;
-    font-family: "Cagliostro", sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-bottom: 20px;
-    box-shadow: 3px 1px 3px rgba(0, 0, 0, 0.527);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
 }
 
 nav > p {
@@ -87,16 +92,22 @@ nav a{
   background: linear-gradient(45deg, #833AB4, #FD1D1D, #FCAF45);
 }
 
+#facebook {
+    background-color: #25257a;
+}
+
 main {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
     margin: auto;
     min-width: 300px;
     max-width: 800px;
     padding: 10px;
+    font-family: "Roboto Mono", Arial, monospace;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.411);
 }
 
 main h1 {
-    color: rgb(155, 118, 24);
+    color: #9b7618;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.527);
     font-family: "monosquare", sans-serif;
     font-size: 30px;
@@ -105,7 +116,9 @@ main h1 {
     margin-top: 50px;
 }
 
-h2 {
+main h2 {
+    color: var(--cor0);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.521);
     padding: 50px;
     margin: 50px 0px;
     text-align: center;
@@ -116,7 +129,7 @@ h2::after {
     content: '\1F431';
 }
 
-img {
+section > img {
     max-width: 100%;
     display: block;
     margin: auto;
@@ -139,7 +152,6 @@ article {
 ul {
     list-style-type: '\1F43E';
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .adocao-rensponsavel {
@@ -153,7 +165,7 @@ li {
 
 main p{
     padding: 10px;
-    font-family: "Cagliostro", sans-serif;
+    font-size: clamp(15px, 2vw, 30px);
 }
 
 h3, h4 {
@@ -163,15 +175,16 @@ h3, h4 {
 
 footer {
     background-color: var(--cor0);
-    margin-top: 50px;
+    margin-top: 100px;
     text-align: center;
 }
 
 footer > p {
     color: white;
+    padding: 10px;
+    font-family: "monosquare", monospace;
 }
 
 footer a {
     color: white;
-    text-decoration: none;
 }
